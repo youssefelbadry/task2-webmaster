@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./image/solar-panels-meadow2(1)(1).png" alt="Image 1"></div>
+            <div class="slide"><img src="./image/solar-panels-meadow2.png" alt="Image 2"></div>
+            <div class="slide"><img src="./image/solar-panels-meadow2(2).png" alt="Image 3"></div>
+        </div>
+        <!-- Previous and Next buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <!-- Pagination Dots -->
+        <div class="pagination">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
